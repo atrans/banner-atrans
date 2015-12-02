@@ -1,0 +1,179 @@
+
+/*====================================
+=            banner style            =
+====================================*/
+
+#main-banner{
+
+	margin-top: 40px;
+}
+
+
+.section.banner{
+    height:100%;
+    overflow:hidden;
+    display:block;
+    position:relative;
+}
+.banner{
+    position:relative;
+}
+.carousel-control {
+    width: 5%;
+}
+.carousel-control.right{
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .2) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .2) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .2)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .2) 100%);
+}
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .0001) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .0001) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .2)), to(rgba(0, 0, 0, .0001)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, .0001) 100%);
+}
+.carousel-control .fa-chevron-left, .carousel-control .fa-chevron-right {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    color:#FBA301;
+}
+.carousel-control .fa-chevron-right {
+    right: 50%;
+}
+.carousel-indicators {
+    bottom: 30%;
+}
+.carousel-caption{
+    position: absolute;
+    right: 15%;
+    bottom: auto;
+    left: auto;
+    top:15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: right;
+}
+.caption-heading{
+    font-size: 50px;
+    color: #fff;
+    line-height: 70px;
+    font-weight: 700;
+}
+.caption-desc{
+    text-align:right;
+    color:#FBA301;
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 400;
+}
+.item:nth-child(2n) .carousel-caption{
+    right: auto;
+    text-align: left;
+    left:15%;
+}
+.item:nth-child(2n) .caption-desc{
+    text-align: left;
+}
+
+.caption-desc small{
+    font-size: 18px;
+    line-height: 25px;
+    color:#fff;
+}
+.carousel-caption .btn-default{
+    background-color: #FBA301;
+    border-color: #FBA301;
+    color: #fff;
+    padding: 12px 35px;
+    font-weight: bold;
+    border-radius: 2px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all ease .25s;
+            transition: all ease .25s;
+}
+.carousel-caption .btn-default:hover{
+    background-color: transparent;
+    border-color: #FBA301;
+}
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    margin: 0 7px;
+    background-color: #FBA301;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 1px;
+    background-color: #aaa;
+    border: 0;
+    margin:0 7px;
+}
+.item:nth-child(1n) .caption-heading{
+    margin-right:-200px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all ease .5s;
+            transition: all ease .5s;
+}
+.item.active:nth-child(1n) .caption-heading{
+    margin-right:0px;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+.item:nth-child(1n) .caption-desc{
+    margin-right:-200px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all ease .8s;
+            transition: all ease .8s;
+}
+.item.active:nth-child(1n) .caption-desc{
+    margin-right:0px;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.item:nth-child(2n) .caption-heading{
+    margin-left:-200px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all ease .5s;
+            transition: all ease .5s;
+}
+.item.active:nth-child(2n) .caption-heading{
+    margin-left:0px;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+.item:nth-child(2n) .caption-desc{
+    margin-left:-200px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all ease .8s;
+            transition: all ease .8s;
+}
+.item.active:nth-child(2n) .caption-desc{
+    margin-left:0px;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+.item.active .carousel-caption .btn-default{
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+
+/*=====  End of banner style  ======*/
